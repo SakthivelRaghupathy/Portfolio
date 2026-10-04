@@ -2108,3 +2108,34 @@ button.view-cert-btn:hover {
   color: var(--accent-purple, #a855f7);
   font-size: 18px;
 }
+
+/* --- Mobile Layout Fixes --- */
+@media (max-width: 768px) {
+  
+  /* Forces the hero section to stack vertically */
+  .hero-content {
+    flex-direction: column;
+  }
+
+  /* Removes absolute positioning so the badge stops overlapping */
+  .floating-badge { 
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 24px auto 0 auto; /* Centers the badge and adds space above */
+    width: max-content;
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  /* Ensures the image wrapper adapts to the stacked layout */
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+}
