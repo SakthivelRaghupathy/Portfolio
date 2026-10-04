@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakthivel R - Portfolio</title>
+    
+    <!-- Google Fonts: Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <span class="brand-logo">SR</span>
+                <span class="brand-name">Sakthivel R</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="active"><i class="ph ph-house"></i> Home</a>
+                <a href="#about"><i class="ph ph-user"></i> About</a>
+                <a href="#skills"><i class="ph ph-code"></i> Skills</a>
+                <a href="#certifications"><i class="ph ph-medal"></i> Certifications</a>
+                <a href="#experience"><i class="ph ph-briefcase"></i> Experience</a>
+                <a href="#projects"><i class="ph ph-folder"></i> Projects</a>
+                <a href="#achievements"><i class="ph ph-trophy"></i> Achievements</a>
+                <a href="#contact"><i class="ph ph-envelope-simple"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="ph ph-sun"></i>
+                    <i class="ph ph-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-btn">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <h2 class="greeting">Hi, I'm</h2>
+                <h1 class="name-title">Sakthivel R</h1>
+                <h3 class="subtitle">Software Developer & Data Enthusiast</h3>
+                
+                <p class="description">
+                    I build practical, high-performance applications using Python, Flask, and PostgreSQL. Passionate about solving real-world problems through clean code, scalable architecture, and intelligent database management.
+                </p>
+
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Projects <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me <i class="ph ph-chat-circle-dots"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-label">Tech Stack</span>
+                    <div class="tech-icons">
+                        <!-- Tech Icons (Using Devicon / Simple SVGs for demo) -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                        <img src="https://wp.swovo.com/wp-content/uploads/2024/01/What-is-Flask_-Overview-of-the-Flask-Python-Framework-in-2024.png" alt="flask" title="Flask">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" title="FastAPI">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql" title="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb" title="MongoDB">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                        <img src="https://www.kindpng.com/picc/m/20-204281_transparent-png-tableau-logo-png-download.png" alt="tableau" title="Tableau">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content (Image & Floating Card) -->
+            <div class="hero-visual">
+                <div class="dot-pattern"></div>
+                <div class="image-wrapper">
+                    <!-- Replace the src below with your actual photo -->
+                    <img src="https://via.placeholder.com/400x500/1e1b4b/8b5cf6?text=Your+Photo+Here" alt="Sakthivel R" class="profile-img">
+                    
+                    <!-- Floating Badge -->
+                    <div class="floating-badge">
+                        <div class="badge-icon"><i class="ph ph-code"></i></div>
+                        <div class="badge-text">
+                            <p>Building solutions that make a difference.</p>
+                            <span class="status"><span class="pulse-dot"></span> Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT ME SECTION -->
+<section class="about-section shell" id="about" aria-labelledby="about-main-heading">
+  <div class="about-header">
+    <h2 id="about-main-heading" class="section-title">
+  <span class="title-purple">About</span> <span class="title-theme">Me</span>
+</h2>
+    <h2 id="about-main-heading">Get to know me <span class="highlight">better</span></h2>
+    <p class="about-lead">
+      I'm a B.Tech IT student passionate about building practical, user-focused applications using Python and modern technologies. I enjoy solving real-world problems through clean code, automation and data-driven insights.
+    </p>
+  </div>
+
+  <div class="about-grid">
+    <!-- Left Column: My Details -->
+    <div class="glass-card details-card">
+      <div class="card-title-group">
+        <i class="ph ph-user-circle card-icon"></i>
+        <h3>My Details</h3>
+      </div>
+      
+      <div class="detail-item">
+        <div class="detail-icon"><i class="ph ph-graduation-cap"></i></div>
+        <div>
+          <h4>Education</h4>
+          <p>B.Tech Information Technology<br>Anna University (Regulation 2021) | Passout: 2027</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <div class="detail-icon"><i class="ph ph-map-pin"></i></div>
+        <div>
+          <h4>Location</h4>
+          <p>Chennai, Tamil Nadu, India</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <div class="detail-icon"><i class="ph ph-target"></i></div>
+        <div>
+          <h4>Goal</h4>
+          <p>To become a skilled Software Developer and contribute to impactful products that solve real-world problems.</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <div class="detail-icon"><i class="ph ph-heart"></i></div>
+        <div>
+          <h4>Interests</h4>
+          <p>Automation, Web Development, Data Analysis, Problem Solving, Open Source</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <div class="detail-icon"><i class="ph ph-lightning"></i></div>
+        <div>
+          <h4>Strengths</h4>
+          <p>Quick Learner, Problem Solver, Detail Oriented, Consistent & Self Motivated</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Academic Journey Timeline -->
+    <div class="glass-card timeline-card">
+      <div class="card-title-group">
+        <i class="ph ph-book-open card-icon"></i>
+        <h3>Academic Journey</h3>
+      </div>
+      <p class="timeline-desc">My academic path has equipped me with a strong foundation in technology and problem solving.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>B.Tech Information Technology</h4>
+            <p class="institution">Anna University (Regulation 2021)</p>
+            <span class="timeline-date"><i class="ph ph-calendar"></i> 2023 – 2027</span>
+            <div class="timeline-badge">CGPA (Till 6th Sem): 8.82 / 10</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Higher Secondary (HSC)</h4>
+            <p class="institution">State Board of Tamil Nadu</p>
+            <span class="timeline-date"><i class="ph ph-calendar"></i> 2022 – 2023</span>
+            <div class="timeline-badge">Percentage: 77%</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Secondary (SSLC)</h4>
+            <p class="institution">State Board of Tamil Nadu</p>
+            <span class="timeline-date"><i class="ph ph-calendar"></i> 2020 – 2021</span>
+            <div class="timeline-badge">PASS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Career Journey Flow Row -->
+  <div class="glass-card career-card">
+    <div class="card-title-group">
+      <i class="ph ph-briefcase card-icon"></i>
+      <h3>Career Journey</h3>
+    </div>
+    <p class="career-desc">My journey is focused on continuous learning, building real-world projects and growing as a developer.</p>
+
+    <div class="career-flow">
+      <div class="flow-step">
+        <div class="flow-icon"><i class="ph ph-book"></i></div>
+        <h4>Learn</h4>
+        <p>Strong foundation in Python, DSA, OOP, SQL, Web Development and Data Analysis.</p>
+      </div>
+      <div class="flow-arrow"><i class="ph ph-dots-three"></i><i class="ph ph-arrow-right"></i></div>
+
+      <div class="flow-step">
+        <div class="flow-icon"><i class="ph ph-code"></i></div>
+        <h4>Build</h4>
+        <p>Developing practical projects in Web Development, Automation, Data Analysis and more.</p>
+      </div>
+      <div class="flow-arrow"><i class="ph ph-dots-three"></i><i class="ph ph-arrow-right"></i></div>
+
+      <div class="flow-step">
+        <div class="flow-icon"><i class="ph ph-rocket-launch"></i></div>
+        <h4>Explore</h4>
+        <p>Contributing to open source, solving real-world problems and exploring new technologies.</p>
+      </div>
+      <div class="flow-arrow"><i class="ph ph-dots-three"></i><i class="ph ph-arrow-right"></i></div>
+
+      <div class="flow-step">
+        <div class="flow-icon"><i class="ph ph-chart-line-up"></i></div>
+        <h4>Grow</h4>
+        <p>Aiming for impactful opportunities as a Software Developer and making a meaningful impact.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume & Stats Block Row -->
+  <div class="glass-card resume-grid-card">
+    <div class="resume-col">
+      <div class="card-title-group">
+        <i class="ph ph-file-text card-icon"></i>
+        <h3>Resume</h3>
+      </div>
+      <span class="resume-role"> Software / Full Stack Developer</span>
+      <p class="resume-text">Passionate about building efficient backend systems, automating tasks and turning data into valuable insights. Eager to contribute to product-based teams and grow as a developer.</p>
+      <a href="https://drive.google.com/file/d/1OJzb107CYXfo4aoJMvFnr2F7kW8BiwME/view?usp=drivesdk" class="primary-button resume-btn">
+        View My Resume <i class="ph ph-download-simple" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="stats-subgrid">
+      <div class="stat-item">
+        <i class="ph ph-code-block"></i>
+        <h4>10+</h4>
+        <span>Projects Completed</span>
+        <small>End-to-end Applications</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-database"></i>
+        <h4>5+</h4>
+        <span>Databases Worked With</span>
+        <small>SQL & NoSQL (Real-world Data)</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-chart-bar"></i>
+        <h4>2+</h4>
+        <span>Data Analysis Projects</span>
+        <small>Insights & Visualization</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-certificate"></i>
+        <h4>10+</h4>
+        <span>Certifications & Courses</span>
+        <small>From Top Platforms</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-clock-countdown"></i>
+        <h4>500+</h4>
+        <span>Hours of Learning</span>
+        <small>Consistent & Focused</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-cpu"></i>
+        <h4>Python</h4>
+        <span>Core Strength</span>
+        <small>Backend Development</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-globe"></i>
+        <h4>Web</h4>
+        <span>Technologies</span>
+        <small>HTML,CSS,JS,Flask,PostgreSQL</small>
+      </div>
+      <div class="stat-item">
+        <i class="ph ph-wrench"></i>
+        <h4>Tools</h4>
+        <span>I Used</span>
+        <small>GitHub,VSCode,pycharm,Tableau,Postman</small>
+      </div>
+    </div>
+  </div>
+  <div class="section-footer-note">
+    <i class="ph ph-graduation-cap"></i>
+    <span>Passionate about Computer Science Engineering and actively preparing for new opportunities upon graduating in 2027.</span>
+  </div>
+</section>
+<!-- SKILLS SECTION -->
+<section class="skills-section shell" id="skills" aria-labelledby="skills-main-heading">
+  <div class="skills-header">
+    <h2 id="skills-main-heading" class="section-title">
+  <span class="title-purple">My</span> <span class="title-theme">Skills</span>
+</h2>
+    <h2 id="skills-main-heading">Skills & <span class="highlight">Technologies</span></h2>
+    <p class="skills-lead">
+      Technologies and tools I use to build, analyze and solve real-world problems.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+    <!-- Backend Card -->
+    <div class="glass-card skill-category-card">
+      <div class="card-title-group">
+        <i class="ph ph-hard-drives card-icon"></i>
+        <h3>Backend</h3>
+      </div>
+      <p class="category-desc">Technologies and frameworks I use for building robust backend systems.</p>
+      
+      <div class="skill-items-grid">
+        <div class="skill-pill"><img src="https://wp.swovo.com/wp-content/uploads/2024/01/What-is-Flask_-Overview-of-the-Flask-Python-Framework-in-2024.png" alt="Flask"><span>Flask</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy"><span>SQLAlchemy</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"><span>SQLite</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+      </div>
+    </div>
+
+    <!-- Languages Card -->
+    <div class="glass-card skill-category-card">
+      <div class="card-title-group">
+        <i class="ph ph-code card-icon"></i>
+        <h3>Languages</h3>
+      </div>
+      <p class="category-desc">Programming and query languages I work with.</p>
+      
+      <div class="skill-items-grid">
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+        <div class="skill-pill"><img src="https://img.icons8.com/fluent/1200/sql.jpg" alt="SQL"><span>SQL</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"><span>Bash</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R"><span>R</span></div>
+      </div>
+    </div>
+
+    <!-- Frontend Card -->
+    <div class="glass-card skill-category-card">
+      <div class="card-title-group">
+        <i class="ph ph-desktop card-icon"></i>
+        <h3>Frontend</h3>
+      </div>
+      <p class="category-desc">Technologies I use to build responsive and modern user interfaces.</p>
+      
+      <div class="skill-items-grid">
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS"><span>Tailwind CSS</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+        <div class="skill-pill"><img src="https://www.chartjs.org/media/logo-title.svg" alt="Chart.js"><span>Chart.js</span></div>
+      </div>
+    </div>
+
+    <!-- Database Card -->
+    <div class="glass-card skill-category-card">
+      <div class="card-title-group">
+        <i class="ph ph-database card-icon"></i>
+        <h3>Database</h3>
+      </div>
+      <p class="category-desc">Databases I use for storing and managing data.</p>
+    
+      <div class="skill-items-grid">
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"><span>SQLite</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+      </div>
+    </div>
+
+    <!-- Tools & Technologies Card -->
+    <div class="glass-card skill-category-card">
+      <div class="card-title-group">
+        <i class="ph ph-wrench card-icon"></i>
+        <h3>Tools & Technologies</h3>
+      </div>
+      <p class="category-desc">Tools and technologies that help me build, test and deploy efficiently.</p>
+      
+      <div class="skill-items-grid">
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+        <div class="skill-pill"><img src="https://toppng.com/uploads/preview/github-logo-png-file-11659780002bmr9y9ordl.png" alt="GitHub"><span>GitHub</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+        <div class="skill-pill"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"><span>Postman</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"><span>PyCharm</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="pgAdmin 4"><span>pgAdmin 4</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter"><span>Jupyter</span></div>
+        <div class="skill-pill"><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" alt="Power BI"><span>Power BI</span></div>
+        <div class="skill-pill"><img src="https://www.kindpng.com/picc/m/20-204281_transparent-png-tableau-logo-png-download.png" alt="Tableau"><span>Tableau</span></div>
+        <div class="skill-pill"><img src="https://img.stackshare.io/service/25390/default_b75b4798687f3a8ac77b1c03ce99c60560b06ccb.jpg" alt="Thunder Client"><span>Thunder Client</span></div>
+        <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="Anaconda"><span>Anaconda</span></div>
+      </div>
+    </div>
+
+    <!-- Other Skills Card -->
+    <div class="glass-card skill-category-card">
+      <div class="card-title-group">
+        <i class="ph ph-star card-icon"></i>
+        <h3>Other Skills</h3>
+      </div>
+      <p class="category-desc">Other domains and skills I'm familiar with.</p>
+      <div class="skill-items-grid">
+        <div class="skill-pill" title="Data Analysis"><i class="ph ph-chart-bar skill-ph-icon"></i><span>Data Analysis (Pandas)</span></div>
+        <div class="skill-pill" title="Web Scraping"><i class="ph ph-magnifying-glass skill-ph-icon"></i><span>Web Scraping (BeautifulSoup)</span></div>
+        <div class="skill-pill" title="Automation"><i class="ph ph-robot skill-ph-icon"></i><span>Automation (Scripting)</span></div>
+        <div class="skill-pill" title="QA Automation"><i class="ph ph-check-square skill-ph-icon"></i><span>QA Automation (Selenium)</span></div>
+        <div class="skill-pill" title="API Integration"><i class="ph ph-cpu skill-ph-icon"></i><span>API Integration</span></div>
+        <div class="skill-pill" title="Data Visualization"><i class="ph ph-trend-up skill-ph-icon"></i><span>Data Visualization (Power BI, Chart.js)</span></div>
+        <div class="skill-pill" title="Problem Solving"><i class="ph ph-lightbulb skill-ph-icon"></i><span>Problem Solving (DSA)</span></div>
+        <div class="skill-pill" title="Debugging"><i class="ph ph-git-branch skill-ph-icon"></i><span>Debugging</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="section-footer-note">
+    <i class="ph ph-wrench"></i>
+    <span>Continuously expanding my full-stack toolkit to build responsive and scalable web applications.</span>
+  </div>
+</section>
+<!-- CERTIFICATIONS SECTION -->
+<section class="certificates-section shell" id="certifications" aria-labelledby="certs-main-heading">
+  <div class="certs-header">
+    <h2 id="certs-main-heading" class="section-title title-purple">
+  Certifications
+</h2>
+    <h2 id="certs-main-heading">Certificates & <span class="highlight">Credentials</span></h2>
+    <p class="certs-lead">
+      Professional certifications and courses that enhance my skills and knowledge.
+    </p>
+  </div>
+
+  <div class="certs-list">
+    <!-- Cert Item 1 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://snmcollege.ac.in/wp-content/uploads/2023/07/NPTEL.png" alt="NPTEL">
+        </div>
+        <div>
+          <span class="cert-issuer">NPTEL</span>
+          <h3> Data Structures And Algorithms Using Python</h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i> Jan-Mar 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/dsa-nptel.jpg">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+    </div>
+
+    <!-- Cert Item 2 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.tVHImC715kuoK3qLMsUOfAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Udemy">
+        </div>
+        <div>
+          <span class="cert-issuer">Udemy</span>
+          <h3>Python Programming</h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i>April 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/python-udemy.jpg">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+    </div>
+
+    <!-- Cert Item 3 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://www.logoshape.com/wp-content/uploads/2025/02/Mongodb_Icon_vector_logo.png" alt="MongoDB">
+        </div>
+        <div>
+          <span class="cert-issuer">MongoDB</span>
+          <h3>MongoDB for SQL Experts</h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i> June 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/sql-mongodb.jpg">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+      </a>
+    </div>
+
+    <!-- Cert Item 4 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        </div>
+        <div>
+          <span class="cert-issuer">Google</span>
+          <h3>AI Agents</h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i> December 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/ai-agent-google.png">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+      </a>
+    </div>
+
+    <!-- Cert Item 5 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+        </div>
+        <div>
+          <span class="cert-issuer">IBM</span>
+          <h3>Python for Data Science</h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i> July 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/data science-ibm.jpg">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+    </div>
+    <!-- Cert Item 6 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://i.pinimg.com/736x/a9/3b/4d/a93b4d7133d8793f62d69fec518c2127.jpg" alt="Kaggle">
+        </div>
+        <div>
+          <span class="cert-issuer">Kaggle</span>
+          <h3>Python Coder</h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i> August 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/python Coder.png">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+    </div>
+    <!-- Cert Item 7 -->
+    <div class="glass-card cert-card">
+      <div class="cert-info">
+        <div class="cert-logo-box">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.tVHImC715kuoK3qLMsUOfAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Udemy">
+        </div>
+        <div>
+          <span class="cert-issuer">Udemy</span>
+          <h3>Data Analysis </h3>
+          <span class="cert-date"><i class="ph ph-calendar"></i> May 2025</span>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/data analytics-udemy.jpg">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+    </div>
+  </div>
+
+  <div class="certs-footer-note">
+    <i class="ph ph-shield-check"></i>
+    <span>All certificates are verified and represent continuous learning and skill development.</span>
+  </div>
+</section>
+
+
+<!-- Experience Section -->
+<section class="experience-section shell" id="experience" aria-labelledby="experience-heading">
+  <div class="projects-header">
+  <!-- Use a span for the small purple subtitle to prevent default heading sizes -->
+<h2 id="projects-main-heading" class="section-title title-purple">
+  Experience
+</h2>  
+  <!-- Use h2 for the main white/gradient title -->
+    <h2 id="projects-main-heading">Internships & <span class="highlight">Experiences</span></h2>
+  
+  <p class="projects-lead">Hands-on industry experience to apply my skills, learn from real-world projects, and gain exposure to modern development practices.</p>
+   <br>
+</div>
+
+
+  <div class="experience-lead">
+    <div class="glass-card experience-card">
+      
+      <!-- White Box for Logo -->
+      <div class="company-logo-box">
+        <!-- Update src to the actual path of the Codec logo -->
+        <img src="https://yt3.googleusercontent.com/RZE1X_GnhFOlIylPS-Hqnv90Vq_dmkQfdInNdU1NHRn8SfrzlRN9SUCEtdmbK_DyUxi-WUJlzg=s900-c-k-c0x00ffffff-no-rj" alt="Codec Technologies" class="company-logo">
+      </div>
+      
+      <!-- Main Content Container -->
+      <div class="experience-content">
+        <div class="experience-header">
+          <div class="title-wrapper">
+            <h3>Codec Technologies Pvt. Ltd.</h3>
+            <span class="status-badge"><span class="status-dot"></span> Completed</span>
+          </div>
+          <!-- Filled Gradient Button -->
+          <button class="view-cert-btn" data-cert-src="./asserts/certificates/intern_certificate.jpeg">
+  View Certificate <i class="ph ph-arrow-up-right"></i>
+</button>
+        </div>
+        
+        <h4 class="experience-role">Python Developer Intern</h4>
+        
+        <div class="experience-meta">
+          <span class="meta-item"><i class="ph ph-calendar-blank"></i> 02 Sep 2026 - 02 Oct 2026</span>
+          <span class="meta-divider">|</span>
+          <span class="meta-item"><i class="ph ph-clock"></i> 1 Month</span>
+          <span class="meta-divider">|</span>
+          <span class="meta-item"><i class="ph ph-map-pin"></i> Hybrid Mode</span>
+        </div>
+        
+        <p class="experience-desc">
+          Completed a 1-month AICTE & ICAC approved internship program, where I worked on real-world projects, improved my Python development skills, and gained hands-on experience in building practical applications and solving real-world problems.
+        </p>
+      </div>
+      
+    </div>
+  <!-- Insert this right below your last experience card -->
+  </div> <!-- This is the closing tag for experience-grid -->
+
+  <div class="section-footer-note">
+    <i class="ph ph-briefcase"></i>
+    <span>All experiences represent hands-on contributions and professional growth in real-world environments.</span>
+  </div>
+
+</section> <!-- This is the closing tag for the entire experience section -->
+
+
+<!-- PROJECTS SECTION -->
+<section class="projects-section shell" id="projects" aria-labelledby="projects-main-heading">
+  <div class="projects-header">
+    <h2 id="projects-main-heading" class="section-title title-purple">
+  Projects
+</h2>
+    <h2 id="projects-main-heading">Featured <span class="highlight">Projects</span></h2>
+    <p class="projects-lead">
+      A collection of projects I've built to solve real-world problems and sharpen my skills.
+    </p>
+  </div>
+
+  <div class="projects-list">
+    <!-- Project 1: Biometric Login System -->
+    <div class="glass-card project-card">
+      <div class="project-info">
+        <div class="project-icon-box">
+          <i class="ph ph-fingerprint"></i>
+        </div>
+        <div>
+          <h3>Biometric Login System</h3>
+          <div class="project-tags">
+            <span class="p-tag">Flask</span>
+            <span class="p-tag">WebAuthn</span>
+            <span class="p-tag">MongoDB</span>
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+          </div>
+          <p class="project-desc">A secure authentication system using fingerprint and face recognition with OTP fallback for seamless and passwordless login.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy/Biometric-Login-Site" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+        View in GitHub <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+
+    <!-- Project 2: Project-Advisor (cli tool) -->
+    <div class="glass-card project-card">
+      <div class="project-info">
+        <div class="project-icon-box">
+          <i class="ph ph-terminal-window"></i>
+        </div>
+        <div>
+          <h3>Project-Advisor (CLI Tool)</h3>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">Typer</span>
+            <span class="p-tag">Rich Console</span>
+            <span class="p-tag">tests</span>
+            <span class="p-tag">Pathlib</span>
+          </div>
+          <p class="project-desc">A  python CLI tool that provides intelligent project analysis and recommendations to enhance developer productivity.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy/Project-Advisor" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+        View in GitHub <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Project 3: Sr Packs (python package) -->
+    <div class="glass-card project-card">
+      <div class="project-info">
+        <div class="project-icon-box">
+          <i class="ph-fill ph-package"></i>
+        </div>
+        <div>
+          <h3>SR-Packs (Python Package)</h3>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">pytest</span>
+            <span class="p-tag">Twine</span>
+            <span class="p-tag">Build</span>
+            <span class="p-tag">re</span>
+          </div>
+          <p class="project-desc">A Python package that provides intelligent project analysis and recommendations to enhance developer productivity.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy/sr-packs" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+        View in GitHub <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+  </div>
+   <!-- Project 4: smart product analytics decision system-->
+    <div class="glass-card project-card">
+      <div class="project-info">
+        <div class="project-icon-box">
+          <i class="ph ph-chart-line-up"></i>
+        </div>
+        <div>
+          <h3>Smart E-Commerce Decision Support System</h3>
+          <div class="project-tags">
+            <span class="p-tag">FastAPI</span>
+            <span class="p-tag">SerpAPI</span>
+            <span class="p-tag">Chart.js</span>
+            <span class="p-tag">PostgreSQL</span>
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+          <p class="project-desc">A smart decision support system for e-commerce products that leverages real-time data to provide actionable insights and recommendations.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy/Smart-E-Commerce-Decision-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+        View in GitHub <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+
+    
+    <!-- Project 5: Weather & Pollution App -->
+    <div class="glass-card project-card">
+      <div class="project-info">
+        <div class="project-icon-box">
+          <i class="ph ph-sun-horizon"></i>
+        </div>
+        <div>
+          <h3>Weather & Pollution App</h3>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">PostgreSQL</span>
+            <span class="p-tag">weather API</span>
+            <span class="p-tag">AQI API</span>
+            <span class="p-tag">Pushbullet</span>
+          </div>
+          <p class="project-desc">A real-time weather and air quality dashboard that provides current weather, 5-day forecasts, and AQI updates using OpenWeatherMap and WAQI APIs.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy/Weather-Pollution-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+        View in GitHub <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+
+    <!-- Project 6: Doctor & Patient Appointment Scheduler -->
+    <div class="glass-card project-card">
+      <div class="project-info">
+        <div class="project-icon-box">
+          <i class="ph ph-calendar-check"></i>
+        </div>
+        <div>
+          <h3>Doctor & Patient Appointment Scheduler</h3>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">JSON</span>
+            <span class="p-tag">OOP</span>
+            <span class="p-tag">Data Structures</span>
+          </div>
+          <p class="project-desc">A system to manage doctor availability and patient bookings with automatic time slot optimization and conflict-free scheduling.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy/Doctor-Patient-Appointment-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+        View in GitHub <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+
+
+  <div class="projects-footer-note">
+    <i class="ph ph-code"></i>
+    <span>
+      These represent a selection of my key projects. For a complete repository of my work, please visit my 
+      <a href="https://github.com/SakthivelRaghupathy?tab=repositories" target="_blank" rel="noopener noreferrer" style="color: var(--accent-purple, #8b5cf6); text-decoration: none; font-weight: 500;">
+        GitHub Repo <i class="ph ph-arrow-up-right" style="font-size: 12px; margin-left: 2px;"></i>
+      </a>.
+    </span>
+  </div>
+</section>
+<!-- ACHIEVEMENTS SECTION -->
+<section class="achievements-section shell" id="achievements" aria-labelledby="achievements-heading">
+  <div class="achievements-header">
+    <h2 id="achievements-heading" class="section-title title-purple">
+  Achievements
+</h2>
+    <h2 id="achievements-heading">Key <span class="highlight">Accomplishments</span></h2>
+    <p class="achievements-lead">
+      Key accomplishments and recognitions that reflect my dedication, hard work, and commitment to excellence.
+    </p>
+  </div>
+
+  <div class="achievements-grid">
+    <!-- Achievement 1 -->
+    <div class="glass-card achievement-card">
+      <div class="achievement-content">
+        <div class="achievement-icon-box">
+          <i class="ph-fill ph-github-logo" style="color: var(--text-main); font-size: 32px;"></i>
+        </div>
+        <div class="achievement-text">
+          <h3>Open Source Contributor</h3>
+          <p>Successfully contributed code to four open-source projects and solved real-world issues.</p>
+        </div>
+      </div>
+      <a href="https://github.com/SakthivelRaghupathy" target="_blank" rel="noopener noreferrer" class="btn btn-outline ach-btn">
+        View Proof <i class="ph ph-arrow-square-out"></i>
+      </a>
+    </div>
+
+    <!-- Achievement 2 -->
+    <div class="glass-card achievement-card">
+      <div class="achievement-content">
+        <div class="achievement-icon-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        </div>
+        <div class="achievement-text">
+          <h3>Python Package – sr_packs</h3>
+          <p>Developed and published a Python package named sr_packs on PyPI to simplify and boost developer productivity.</p>
+        </div>
+      </div>
+      <a href="https://pypi.org/project/sr-packs/0.1.0/" target="_blank" rel="noopener noreferrer" class="btn btn-outline ach-btn">
+        View Proof <i class="ph ph-arrow-square-out"></i>
+      </a>
+    </div>
+    <!-- Achievement 3 -->
+    <div class="glass-card achievement-card">
+      <div class="achievement-content">
+        <div class="achievement-icon-box">
+          <i class="ph ph-terminal-window" style="color: #4ade80; font-size: 32px;"></i>
+        </div>
+        <div class="achievement-text">
+          <h3>CLI Tool – Project Advisor</h3>
+          <p>Built a command-line tool named Project Advisor that analyzes projects and provides smart recommendations.</p>
+        </div>
+      </div>
+      <a href="https://pypi.org/project/project-advisor/1.0.0/" target="_blank" rel="noopener noreferrer" class="btn btn-outline ach-btn">
+        View Proof <i class="ph ph-arrow-square-out"></i>
+      </a>
+    </div>
+
+    <!-- Achievement 4 -->
+    <div class="glass-card achievement-card">
+      <div class="achievement-content">
+        <div class="achievement-icon-box">
+          <i class="ph-fill ph-trophy" style="color: #fbbf24; font-size: 32px;"></i>
+        </div>
+        <div class="achievement-text">
+          <h3>Scored 100/100 in HSC</h3>
+          <p>Achieved a perfect score of 100/100 in Computer Science in the Class XII (Higher Secondary) Public Examination.</p>
+        </div>
+      </div>
+      <button class="view-cert-btn" data-cert-src="./asserts/certificates/hsc.jpeg" style="width: fit-content;">
+  View Marksheet <i class="ph ph-arrow-square-out"></i>
+</button>
+    </div>
+
+    <!-- Achievement 5 -->
+<div class="glass-card achievement-card">
+  <div class="achievement-content">
+    <div class="achievement-icon-box">
+      <i class="ph-fill ph-medal" style="color: #f87171; font-size: 32px;"></i>
+    </div>
+    <div class="achievement-text">
+      <h3>First Rank in 1st & 2nd Year</h3>
+      <p>Secured First Rank in both the first and second years of college for academic excellence.</p>
+    </div>
+  </div>
+  
+  <!-- NEW WRAPPER ADDED HERE -->
+  <div class="button-row">
+    <button class="view-cert-btn" data-cert-src="./asserts/certificates/rank1.jpeg">
+      1st Year
+    </button>
+    <button class="view-cert-btn" data-cert-src="./asserts/certificates/rank2.jpeg">
+      2nd Year
+    </button>
+  </div>
+  
+</div>
+
+    <!-- Achievement 6 (Platform Stats) -->
+    <div class="glass-card achievement-card">
+      <div class="achievement-content">
+        <div class="achievement-icon-box">
+          <i class="ph-fill ph-chart-bar" style="color: #3b82f6; font-size: 32px;"></i>
+        </div>
+        <div class="achievement-text">
+          <h3>Solved Problems Across Platforms</h3>
+          <p>Solved 250+ problems across leading coding platforms, consistently improving problem-solving skills.</p>
+        </div>
+      </div>
+      
+      <div class="platform-stats-list">
+        <a href="https://leetcode.com/u/sakthikrishn/" target="_blank"  rel = "noopener noreferrer"class="platform-link">
+          <span class="p-name"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="invert-dark"> LeetCode</span>
+          <span class="p-score">Profile<i class="ph ph-arrow-square-out"></i></span>
+        </a>
+        <a href="https://takeuforward.org/profile/rsakthivel" target="_blank"  rel = "noopener noreferrer"class="platform-link">
+          <span class="p-name"><img src="https://cdn.coursehunter.net/source/takeuforward.jpg" alt="takeUforward" class="invert-dark"> takeUforward</span>
+          <span class="p-score">Profile<i class="ph ph-arrow-square-out"></i></span>
+        </a>
+        <a href="https://www.hackerrank.com/profile/sakthivelr696" target="_blank"  rel = "noopener noreferrer"class="platform-link">
+          <span class="p-name"><img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/8b9fc1fa-bb42-45c6-957b-3b6611c542f1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=4088" alt="HackerRank" class="invert-dark"> HackerRank</span>
+          <span class="p-score">Profile<i class="ph ph-arrow-square-out"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="achievements-footer">
+    <div class="glass-card footer-banner">
+      <i class="ph-fill ph-star"></i>
+      <span>These achievements represent my continuous learning journey and passion for building impactful solutions.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section shell" id="contact" aria-labelledby="contact-heading">
+  <div class="contact-header">
+    <h2 id="contact-heading" class="section-title">
+  <span class="title-purple">Contact</span> <span class="title-theme">Me</span>
+</h2>
+    <p class="contact-lead">
+      Feel free to reach out to me through any of the platforms below.<br>
+      I'll get back to you as soon as possible!
+    </p>
+  </div>
+
+  <div class="contact-grid">
+    <!-- Email Card -->
+    <div class="glass-card contact-card">
+      <div class="contact-icon-wrapper">
+        <div class="contact-icon-box">
+          <i class="ph-fill ph-envelope"></i>
+        </div>
+      </div>
+      <h3>Email</h3>
+      <span class="contact-detail">sakthivelraghupathy05@gmail.com</span>
+      <a href="mailto:sakthivelraghupathy05@gmail.com" class="btn btn-outline contact-btn">
+        <i class="ph ph-envelope"></i> Send Email
+      </a>
+    </div>
+
+    <!-- LinkedIn Card -->
+    <div class="glass-card contact-card">
+      <div class="contact-icon-wrapper">
+        <div class="contact-icon-box linkedin-glow">
+          <i class="ph-fill ph-linkedin-logo"></i>
+        </div>
+      </div>
+      <h3>LinkedIn</h3>
+      <span class="contact-detail">Sakthivel R</span>
+      <a href="https://linkedin.com/in/sakthivel-raghupathy" target="_blank" rel="noopener noreferrer" class="btn btn-outline contact-btn">
+        <i class="ph ph-linkedin-logo"></i> Open LinkedIn
+      </a>
+    </div>
+
+    <!-- GitHub Card -->
+    <div class="glass-card contact-card">
+      <div class="contact-icon-wrapper">
+        <div class="contact-icon-box github-glow">
+          <i class="ph-fill ph-github-logo"></i>
+        </div>
+      </div>
+      <h3>GitHub</h3>
+      <span class="contact-detail">SakthivelRaghupathy</span>
+      <a href="https://github.com/SakthivelRaghupathy" target="_blank" rel="noopener noreferrer" class="btn btn-outline contact-btn">
+        <i class="ph ph-github-logo"></i> Open GitHub
+      </a>
+    </div>
+
+    <!-- Phone Card -->
+    <div class="glass-card contact-card">
+      <div class="contact-icon-wrapper">
+        <div class="contact-icon-box">
+          <i class="ph-fill ph-phone"></i>
+        </div>
+      </div>
+      <h3>Phone</h3>
+      <span class="contact-detail">+91 78100 35175</span>
+      <a href="tel:+917810035175" class="btn btn-outline contact-btn">
+        <i class="ph ph-phone"></i> Call Now
+      </a>
+    </div>
+  </div>
+
+  <div class="glass-card contact-footer-banner">
+    <div class="footer-banner-left">
+      <div class="send-icon-circle">
+        <i class="ph-fill ph-paper-plane-tilt"></i>
+      </div>
+      <span>Let's connect and build something amazing together!</span>
+    </div>
+    <div class="footer-banner-right">
+      <!-- Decorative dashed line and paper plane icon matching the image -->
+      <svg class="flight-path" width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 25 Q 30 25, 50 15 T 100 15" stroke="var(--accent-purple, #8b5cf6)" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+      </svg>
+      <i class="ph ph-paper-plane-right decorative-plane"></i>
+    </div>
+  </div>
+</section>
+    </main>
+    <!-- FOOTER SECTION -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Big Gradient Logo -->
+    
+    <!-- Tagline -->
+    <p class="footer-tagline">
+      Passionate about building impactful projects,<br>
+      solving real-world problems, and constantly learning.
+    </p>
+
+    <!-- Top Divider -->
+    <div class="footer-divider short-divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- Inline Navigation -->
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <span class="nav-dot">•</span>
+      <a href="#about">About Me</a>
+      <span class="nav-dot">•</span>
+      <a href="#skills">Skills</a>
+      <span class="nav-dot">•</span>
+      <a href="#certifications">Certificates</a>
+      <span class="nav-dot">•</span>
+      <a href="#projects">Projects</a>
+      <span class="nav-dot">•</span>
+      <a href="#achievements">Achievements</a>
+      <span class="nav-dot">•</span>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Square Social/Contact Icons -->
+    <div class="footer-socials">
+      <!-- NAUKRI REPLACEMENT (Using Inline SVG to act like a font icon) -->
+<a href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener noreferrer" class="social-box" aria-label="Naukri">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="var(--sans), Arial, sans-serif" font-weight="900" font-style="italic" font-size="22">N</text>
+  </svg>
+</a>
+      <a href="https://linkedin.com/in/sakthivel-raghupathy" target="_blank" rel="noopener noreferrer" class="social-box" aria-label="LinkedIn">
+        <i class="ph-fill ph-linkedin-logo"></i>
+      </a>
+      <a href="mailto:sakthivelraghupathy05@gmail.com" class="social-box" aria-label="Email">
+        <i class="ph ph-envelope-simple"></i>
+      </a>
+      <a href="tel:+917810035175" class="social-box" aria-label="Phone">
+        <i class="ph ph-phone"></i>
+      </a>
+    </div>
+
+    <!-- Bottom Heart Divider -->
+    <div class="footer-divider full-divider">
+      <div class="divider-line"></div>
+      <i class="ph ph-heart heart-icon"></i>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- Copyright & Built With -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sakthivel R. All rights reserved.</p>
+      <p>Designed & Built with <span class="passion-text">passion</span> using HTML, CSS, JavaScript & Tailwind CSS.</p>
+    </div>
+    
+  </div>
+</footer>
+
+    <script src="app.js"></script>
+
+    <!-- Certificate Modal Overlay -->
+<div id="certModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-modal" aria-label="Close modal">&times;</span>
+    <!-- The image source will be injected here by JavaScript -->
+    <img id="modalImage" src="" alt="Certificate View" />
+  </div>
+</div>
+</body>
+</html>
